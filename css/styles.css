@@ -1,0 +1,362 @@
+body {
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*---------------HEADER-------------------*/
+header {
+  background-image: url(../images/officeImage.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 3em;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 10px;
+}
+
+.header-name {
+    font-weight: 300;
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-top: 150px;
+}
+
+.arrow {
+ width: 50px;
+ margin-top: 280px;
+}
+
+/*---------------ABOUT-------------------*/
+.about-container {
+  background-color: #cbe86b;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #1c140d;
+  padding: 50px 0 50px 0;
+
+}
+
+.profile-container, .skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+.profile {
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profileImage-wrapper{
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  background: url(../images/profileImage.jpg);
+  background-size: cover;                   
+    background-repeat:   no-repeat;
+    background-position: center; 
+  margin-bottom: 10px;
+  }
+
+.profileImage-wrapper img {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  }
+
+  .contact-link {
+    cursor: pointer;
+    width: 115px;
+    height: 25px;
+    margin-top: 6px;
+    background: rgb(47, 43, 24);
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+  }
+
+  .contact-link:hover {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0.8;
+    filter: alpha(opacity=50);/* For IE8 and earlier */
+  }
+
+.profile-content {
+  margin-right: 100px;
+}
+
+p {
+  max-width: 600px;
+  margin: 0 auto 20px;
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 15px;
+}
+
+.languages, .framework {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-icons img {
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+    margin-right: 1rem;
+    filter: brightness(0) invert(1);
+}
+
+.languages {
+  margin-left: 60px;
+}
+
+.framework {
+  margin-right: 150px;
+}
+
+/*---------------WORK-------------------*/
+
+.work-container {
+    background-color: rgba(186, 184, 170, 0.48);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.work-container h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.project-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.project-image img{
+  width: 350px;
+  height: 350px; 
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+
+
+.project-image img:hover {
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    opacity: 0.5;
+   filter: alpha(opacity=50);/* For IE8 and earlier */
+}
+
+/*---------------FOOTER-------------------*/
+
+footer {
+ font-size: 0.75em;
+ text-align: center;
+ height:20vh;
+ background-color: #1c140d;
+ padding-top: 10px;
+ color: white;
+}
+
+.contact-list a {
+  padding: 10px;
+}
+
+.icon {
+  font-size: 60px;
+  padding-bottom: 8px;
+  color: white;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+.icon:hover {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0.5;
+    filter: alpha(opacity=50);/* For IE8 and earlier */
+}
+
+/*---------------@MEDIA-------------------*/
+
+@media (max-width: 500px) {
+
+  /*------------ HEADER ------------*/
+    header {
+      background-image: url(../images/officeImage.jpg);
+      background-size: cover;
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: 10%;
+      color: blue;
+    }
+
+    .header-title {
+        font-weight: 550;
+        font-size: 3em;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        margin-top: 10px;
+    }
+
+    .header-name {
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 1em;
+        margin-top: 75px;
+    }
+
+    .arrow {
+        width: 25px;
+        margin-top: 100px;
+    }
+
+  /*------------ ABOUT ------------*/
+
+    .about-container {
+            height: auto;
+            width: 100%;
+        }
+        .profile-container, .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: auto;
+    }
+    .profileImage-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+    .profile {
+        margin-left: 0;
+    }
+    .contact-link {
+        cursor: pointer;
+        width: 100px;
+        height: 20px;
+    }
+    .profile-content {
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    .languages {
+        margin-left: 0px;
+    }
+    .framework {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+
+  /*------------ HEADER ------------*/
+    header {
+      background-image: url(../images/officeImage.jpg);
+      background-size: cover;
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: 10%;
+      color: pink;
+    }
+
+    .header-title {
+        font-weight: 700;
+        font-size: 3em;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        margin-top: 10px;
+        margin-right: 8%;
+    }
+
+    .header-name {
+        font-weight: 300;
+        font-size: 2em;
+        text-transform: uppercase;
+        margin-top: 85px;
+        margin-right: 11%;
+    }
+
+    .arrow {
+      width: 50px;
+      margin-top: 61px;
+      margin-right: 13%;
+    }
+
+  /*------------ ABOUT ------------*/
+
+    .about-container {
+            height: auto;
+            width: 100%;
+        }
+    .profile-container, .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: auto;
+    }
+    .profileImage-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+    .profile {
+        margin-left: 0;
+    }
+    .contact-link {
+        cursor: pointer;
+        width: 100px;
+        height: 20px;
+    }
+    .profile-content {
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    .languages {
+        margin-left: 0px;
+    }
+    .framework {
+        margin-right: 0px;
+    }
+
+ }
