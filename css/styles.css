@@ -1,5 +1,8 @@
 body {
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  line-height: 1.5;
+
 }
 
 /*---------------HEADER-------------------*/
@@ -91,6 +94,7 @@ header {
     text-align: center;
     text-decoration: none;
     border-radius: 10px;
+    border: 3px solid #34400e;
     color: white;
     font-weight: bold;
     display: flex;
@@ -146,7 +150,7 @@ p {
 /*---------------WORK-------------------*/
 
 .work-container {
-    background-color: rgba(186, 184, 170, 0.48);
+    background-color: rgba(222, 221, 214, 0.41);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -193,7 +197,7 @@ footer {
  font-size: 0.75em;
  text-align: center;
  height:20vh;
- background-color: #1c140d;
+ background-color: #333;
  padding-top: 10px;
  color: white;
 }
@@ -221,75 +225,7 @@ footer {
 
 /*---------------@MEDIA-------------------*/
 
-@media (max-width: 500px) {
-
-  /*------------ HEADER ------------*/
-    header {
-      background-image: url(../images/officeImage.jpg);
-      background-size: cover;
-      height: 100vh;
-      background-attachment: fixed;
-      background-position: 10%;
-      color: blue;
-    }
-
-    .header-title {
-        font-weight: 550;
-        font-size: 3em;
-        text-transform: uppercase;
-        letter-spacing: .1rem;
-        margin-top: 10px;
-    }
-
-    .header-name {
-        font-weight: 300;
-        text-transform: uppercase;
-        font-size: 1em;
-        margin-top: 75px;
-    }
-
-    .arrow {
-        width: 25px;
-        margin-top: 100px;
-    }
-
-  /*------------ ABOUT ------------*/
-
-    .about-container {
-            height: auto;
-            width: 100%;
-        }
-        .profile-container, .skills {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: auto;
-    }
-    .profileImage-wrapper {
-        width: 200px;
-        height: 200px;
-    }
-    .profile {
-        margin-left: 0;
-    }
-    .contact-link {
-        cursor: pointer;
-        width: 100px;
-        height: 20px;
-    }
-    .profile-content {
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-    .languages {
-        margin-left: 0px;
-    }
-    .framework {
-        margin-right: 0px;
-    }
-}
-
-@media (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 1100px) {
 
   /*------------ HEADER ------------*/
     header {
@@ -303,25 +239,26 @@ footer {
 
     .header-title {
         font-weight: 700;
-        font-size: 3em;
+        font-size: 2.5em;
         text-transform: uppercase;
         letter-spacing: .1rem;
         margin-top: 10px;
-        margin-right: 8%;
+        margin-left: 20%;
+        margin-right: 20%;
     }
 
     .header-name {
         font-weight: 300;
-        font-size: 2em;
+        font-size: 1.5em;
         text-transform: uppercase;
         margin-top: 85px;
-        margin-right: 11%;
+        margin-right: 3%;
     }
 
     .arrow {
       width: 50px;
       margin-top: 61px;
-      margin-right: 13%;
+      margin-right: 0.5%;;
     }
 
   /*------------ ABOUT ------------*/
@@ -359,4 +296,162 @@ footer {
         margin-right: 0px;
     }
 
+  /*------------ WORK ------------*/
+
+    .work-container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #EEEEEE;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .work-container h1 {
+        font-weight: 200;
+        letter-spacing: 0rem;
+        margin-top: 0px;
+        font-size: 2em;
+    }
+    .project-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-image img {
+        height: 200px;
+        width: 300px;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* For IE8 and earlier */
+    }
+    .project-content {
+        text-align: justify;
+        text-justify: inter-word;
+        text-indent: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .project-content h2 {
+      text-align: center;
+    }
+    .project-right {
+        flex-direction: column-reverse;
+    }
+
  }
+
+@media (max-width: 600px) {
+
+  /*------------ HEADER ------------*/
+    header {
+      background-image: url(../images/officeImage.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      background-position: 10%;
+      color: blue;
+    }
+
+    .header-title {
+        font-weight: 550;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        margin-top: 10px;
+    }
+
+    .header-name {
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 1.5em;
+        margin-top: 75px;
+    }
+
+    .arrow {
+        width: 25px;
+        margin-top: 100px;
+    }
+
+  /*------------ ABOUT ------------*/
+
+    .about-container {
+            height: auto;
+            width: 100%;
+        }
+    .profile-container, .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: auto;
+    }
+    .profileImage-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+    .profile {
+        margin-left: 0;
+    }
+    .contact-link {
+        cursor: pointer;
+        width: 100px;
+        height: 20px;
+    }
+    .profile-content {
+        margin-right: 0px;
+        margin-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .languages {
+        margin-left: 0px;
+    }
+    .framework {
+        margin-right: 0px;
+    }
+
+  /*------------ WORK ------------*/
+
+    .work-container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #EEEEEE;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .work-container h1 {
+        font-weight: 200;
+        letter-spacing: 0rem;
+        margin-top: 0px;
+        font-size: 2em;
+    }
+    .project-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .project-image img {
+        height: 200px;
+        width: 300px;
+        opacity: 1;
+        filter: alpha(opacity=100);
+        /* For IE8 and earlier */
+    }
+    .project-content {
+        text-align: justify;
+        text-justify: inter-word;
+        text-indent: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .project-content h2 {
+      text-align: center;
+    }
+    .project-right {
+        flex-direction: column-reverse;
+    }
+
+    .work-container p {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+}
