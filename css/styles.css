@@ -163,7 +163,15 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 65px;
+    text-decoration: underline;
+    color: #353533;
+    
 
+}
+
+.project-content h2 {
+  text-decoration: underline;
 }
 
 .project-wrapper {
@@ -175,7 +183,7 @@ p {
 }
 
 .project-image img{
-  width: 350px;
+  width: 500px;
   height: 350px; 
     opacity: 1.0;
     filter: alpha(opacity=100);
