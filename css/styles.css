@@ -228,9 +228,9 @@ footer {
  font-size: 0.75em;
  text-align: center;
  height:20vh;
+ color: white;
  background-color: #333;
  padding-top: 10px;
- color: white;
 }
 
 .contact-list a {
@@ -373,6 +373,12 @@ footer {
         flex-direction: column-reverse;
     }
 
+/*---------------FOOTER-------------------*/
+    footer {
+      padding-bottom: 7em;
+    }
+    
+
  }
 
 @media (max-width: 600px) {
@@ -494,4 +500,8 @@ footer {
       padding-right: 20px;
     }
 
+/*---------------FOOTER-------------------*/
+    footer {
+      padding-bottom: 7em;
+    }
 }
