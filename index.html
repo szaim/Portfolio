@@ -4,6 +4,7 @@
 	<title>Sofia Zaim</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="https://lh3.googleusercontent.com/M2ytj4On_Mv59tvSzDqIxK1vvn31shcnbgndZ5X2emL-rgOPxg8eST5uUEdWeEqZwn7QHkM=s88" width="250" height="250">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -14,61 +15,60 @@
 	<header>
 	    <h2 class="header-name">SOFIA ZAIM</h2>
 	    <h1 class="header-title">WEB DEVELOPER</h1>
-	    <a href="#about" class="arrow">
-	   		 <img  src="images/arrow.svg" alt="Down arrow">	    	
-	    </a>
+  		<div class="skills-icons">
+  			<img src="images/html.svg" alt="HTML">
+	  		<img src="images/css.svg" alt="CSS">
+	  		<img src="images/js.svg" alt="Javascript">
+  			<img src="images/react.svg" alt="React">
+  			<img src="images/redux.png" alt="Redux">
+  			<img src="images/node.svg" alt="Node">
+  			<img src="images/mongodb.png" alt="MongoDB">
+  			<img src="images/jquery.svg" alt="JQuery">
+  		</div>	    
 	</header>
 
 <!-- ********************* ABOUT ********************* -->
 	<div id="about" class="about-container">
 		<div class="profile-container">
-			<div class="profile">
-				<div class="profileImage-wrapper">
-					<img src="#">				
-				</div>
-				 <a href="#contact" class="contact-link">Contact Me!</a>				 	
-			</div>
 			<div class="profile-content">
-			  <p> Hi, I’m Sofia! I’m originally from Morocco, now residing outside of DC. I graduated with my degrees in Computer Science and Sales. After several years working in sales i realized that programming is my true passion. 
+			  <h1>Hi there!</h1>
+			  <p class="first-paragraph"> My name is Sofia! I'm a recovering sales expert recently turned to Software developer.<br> I graduated with my degrees in Computer Science and Sales. After several years working in sales i realized that programming is my true passion. 
 			  </p>
-			  <p> I believe that if we worry about failing, or coming up against obstacles along the way, this can deter us from  starting. But all of that is imaginary thinking because we only know what will really happen when we start moving towards our goal and deal with these challenges as we come upon them. 
+			  <blockquote>
+				  <p class="second-paragraph"> I believe that if we worry about failing, or coming up against obstacles along the way, this can deter us from  starting. But all of that is imaginary thinking because we only know what will really happen when we start moving towards our goal and deal with these challenges as we come upon them. 
+				  </p>			  	
+			  </blockquote>
+			  <p class="second-paragraph"> I love programming because solving  problems and seeing ideas come to life, especially if it improves people's lives in some way, is really satisfying.. 
 			  </p>
-			  <p> I love programming because solving  problems and seeing ideas come to life, especially if it improves people's lives in some way, is really satisfying.. 
-			  </p>
-			  <p> In my free time, I also like seeking out great coffee, hiking and painting.  	
+			  <p class="second-paragraph"> In my free time, I also like seeking out great coffee, hiking and painting. But enough about me, let me show you what I can do.....  	
 			  </p>
 		  </div>
 	  </div> 
-	  <div class="skills">
-	  	<div class="languages">
-		  		<h2 class="skills-title">Languages:</h2>
-			  		<div class="skills-icons">
-			  			<img src="images/html.svg" alt="HTML">
-			  			<img src="images/css.svg" alt="CSS">
-			  			<img src="images/js.svg" alt="Javascript">
-			  		</div>
-		  	</div>			  
-	  	<div class="framework">
-	  		<h2 class="skills-title">Frameworks:</h2>
-		  		<div class="skills-icons">
-		  			<img src="images/react.svg" alt="React">
-		  			<img src="images/redux.png" alt="Redux">
-		  			<img src="images/node.svg" alt="Node">
-		  			<img src="images/mongodb.png" alt="MongoDB">
-		  			<img src="images/jquery.svg" alt="JQuery">
-		  		</div>
-	  	</div>
-	  </div> 	
 	</div>
 
 <!-- ********************* WORK ********************* -->
 <div class="work-container">
-	<h1>Projects</h1>
+	<div class="project-wrapper project-right" id="Ducktivity">
+		<div class="project-content">
+			<h2>Ducktivity<a href="https://github.com/szaim/Ducktivity" target="_blank"><i class="fa fa-github project-icon" aria-hidden="true"></i></a></h2>
+			<p> Ducktivity is a reliable and friendly application that promote productivity and project management for individuals and teams, to stay updated with the overall workflow.</p>
+			<div class="technologies">
+				<span>React</span><span>React-Router</span><span>Redux</span><span>CSS3</span>
+				<span>Less</span><br><span>MongoDB/Mongoose</span><span>Node.js</span><span>Express</span><span>Google Oauth</span>
+			</div>
+			
+		</div>
+		<div class="project-image">
+			<a href="https://young-lake-21041.herokuapp.com" target="_blank">
+				<img class="DucktivityImg" src="images/Ducktivity.png">
+			</a>
+		</div>
+	</div>
 
-	<div class="project-wrapper project-left">
+	<div class="project-wrapper project-left" id="megaMan">
 		<div class="project-image">
 			<a href="https://lit-citadel-38534.herokuapp.com" target="_blank">
-				<img src="images/megaMan.png">
+				<img class="megamanImg" src="images/megaMan.png">
 			</a>
 		</div>
 		<div class="project-content">
@@ -82,7 +82,7 @@
 		</div>
 	</div>
 
-	<div class="project-wrapper project-right">
+	<div class="project-wrapper project-right" id="movieApp">
 		<div class="project-content">
 			<h2>Movie App<a href="https://github.com/szaim/movie-app" target="_blank"><i class="fa fa-github project-icon" aria-hidden="true"></i></a></h2>
 			<p> This is my favorite app, designed to display multiple 3D thumbnails to keep the users up-to-date of popular, top rated and upcoming movies, where the users can watch the trailer of their favorite movies.</p>
@@ -93,46 +93,38 @@
 		</div>
 		<div class="project-image">
 			<a href="https://szaim.github.io/movie-app" target="_blank">
-				<img src="images/movieApp.png">
+				<img class="movieappImg" src="images/movieApp.png">
 			</a>
 		</div>
 	</div>
 
-	<div class="project-wrapper project-left">
+	<div class="project-wrapper project-left" id="bartender">
 		<div class="project-image">
-			<img src="http://ualr.edu/itservices/files/2006/10/projectManagement.jpg">
+			<a href="https://szaim.github.io/BartenderPractice" target="_blank">
+				<img class="bartenderImg" src="images/check.png">
+			</a>
 		</div>
 		<div class="project-content">
-			<h2>Project Title</h2>
-			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-			Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. 
-			Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</p>
+			<h2>Bartender App<a href="https://github.com/szaim/BartenderPractice" target="_blank"><i class="fa fa-github project-icon" aria-hidden="true"></i></a></h2>
+			<p> A Bartender app, that allows the users to pick the flavors they want, and place order of a drink based on those flavors.</p> 
+			<div class="technologies">
+				<span>HTML5</span><span>CSS3</span><span>Javascript</span>
+			</div>
 		</div>
 	</div>
-
-	<div class="project-wrapper project-right">
-		<div class="project-content">
-			<h2>Project Title</h2>
-			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-			Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. 
-			Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</p>
-		</div>
-		<div class="project-image">
-			<img src="http://ualr.edu/itservices/files/2006/10/projectManagement.jpg">
-		</div>
-	</div>
-
 </div> 
 
 <!-- ********************* FOOTER ********************* -->
 	<footer id="contact">
-		<h2>Get in touch!</h2>
+		<div class="profileImage-wrapper">
+			<img src="#">				
+		</div>
+		<h2 class="footer-title">Let's stay in touch! <span class="contact">Contact me.<span></h2>
 		<div class="contact-list">
 			<a href="mailto:zaimsofia81@gmail.com"><i class="fa fa-envelope icon" aria-hidden="true"></i></a>
 			<a href="https://github.com/szaim" target="_blank"><i class="fa fa-github icon" aria-hidden="true"></i></a>
   			<a href="https://www.linkedin.com/in/sofia-zaim-4a69a6b0?trk=hp-identity-name" target="_blank"><i class="fa fa-linkedin-square icon" aria-hidden="true"></i></a>			
 		</div>
-		<span>&copy; 2016 Sofia Zaim.</span>
 	</footer> 
 	<script type='text/javascript' src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
 	<script type="text/javascript" src="js/index.js"></script>
